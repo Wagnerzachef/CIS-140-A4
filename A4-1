@@ -1,0 +1,8 @@
+#!/bin/bash
+echo 'export PS1="\e[1;32m\w\$ \e[m"' >> ~/.bash_profile                 #https://www.linuxquestions.org/questions/linux-newbie-8/using-bold-in-a-bash-script-4175461044/     https://unix.stackexchange.com/questions/100959/how-can-i-change-my-bash-prompt-to-show-my-working-directory
+echo 'PATH=$PATH:$PWD' >> ~/.bash_profile                                 #https://stackoverflow.com/questions/27188856/adding-any-current-directory-to-the-search-path-in-linux
+echo 'alias dir="ls -l"' >> ~/.bash_profile
+echo 'alias cls="clear"' >> ~/.bash_profile
+echo 'w' >> ~/.bash_profile                                               #https://linuxize.com/post/w-command-in-linux/
+echo 'alias rm="rm -i"' >> ~/.bash_profile                                #https://ss64.com/bash/rm.html
+echo 'set -o noclobber' >> ~/.bash_profile                               #https://tldp.org/LDP/intro-linux/html/sect_05_01.html#:~:text=In%20Bash%2C%20you%20would%20want,prevent%20accidental%20overwriting%20of%20files.&text=This%20process%20is%20called%20truncating.
